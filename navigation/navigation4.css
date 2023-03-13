@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ddd;
+}
+
+html {
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  /* Box model */
+  /* width, height, margin, padding */
+  min-height: 100vw;
+  border: 2px dashed black;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.container {
+  max-width: 400px;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-start;
+  border: 2px dashed black;
+
+}
+
+.container-item {
+  padding: 20px;
+  border: 2px solid rgb(240, 75, 196);
+
+}
+
+.container-item-start {
+  align-self: flex-end;
+
+}
+
+.container-item-center {
+  align-self: center;
+
+}
+
+.container-item-end {
+  align-self: flex-end;
+
+}
+
+/* navigation */
+
+header {
+  margin: 0 auto;
+  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  
+  background-color: rgb(207, 168, 175);
+
+}
+
+
+a {
+  border-left: 1px solid rgb(138, 132, 132);
+}
+
+header > a {
+  padding: 0 10px;
+  color: white;
+  background-color: red;
+}
+
+nav > a {
+  padding: 10px 20px;
+  color: red;
+}
+
+nav > a:first-child {
+  background-color: aqua;
+}
+
+nav > a:last-child {
+  background-color: aqua;
+
+}
